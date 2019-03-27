@@ -1,0 +1,82 @@
+body{
+    background-image: url(bg1.png);
+    /* width: fit-content; */
+    /* heig ht: fit-content; */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 310px;
+    margin-right: 310px;
+}
+
+img.s1{
+    float: left;
+}
+
+img.s2{
+    float: right;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.scoreboard{
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    /* margin: 0 auto; */
+}
+
+#score01,#score02,#score03,#score04,#score05{
+    display: none;
+    margin-left: auto;
+    padding-left: 0px;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 50%;
+    font-size: 18px;
+    line-height: 58px;
+    height: 70px;
+    color: white;
+    background-color: teal;
+    border-radius: 4px;
+    border: none;
+}
+
+#number1, #number2, #number3, #number4, #number5{
+    font-size: 26px;
+    width: 10%;
+    text-align: center;
+} 
+
+#nick1, #nick2, #nick3, #nick4, #nick5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 26px;
+    width: 60%;
+    display: inline-block;
+    padding: 5px 90px;
+
+    
+}
+
+#score1, #score2, #score3, #score4, #score5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    text-align: center;
+    width: 30%;
+}
