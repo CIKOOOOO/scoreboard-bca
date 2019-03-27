@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Score Board</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
         <script>
           // Initialize Firebase
@@ -25,8 +25,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <img class="s1" src="star.png" width="100px" height="100px" alt="star">
-            <img class="s2" src="star.png" width="100px" height="100px" alt="star">
+            <img class="s1" src="/res/star.png" width="100px" height="100px" alt="star">
+            <img class="s2" src="/res/star.png" width="100px" height="100px" alt="star">
             <div class="title">TOP 5 HIGHSCORE</div>
         </div>
 
