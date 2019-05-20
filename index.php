@@ -63,12 +63,20 @@
                         allList = [];
                          snapshot.forEach(function(childSnapshot){
                             var key = childSnapshot.key;
+                            console.log(key);
+                            
                             var child = childSnapshot.val();
+                            console.log(child);
+                            
                                 // console.log("1st Child : "+key);
                                 // nama.push(key);
                             childSnapshot.forEach(function(child2Snapshot){
                                 var keyChild = child2Snapshot.key;
-                                var child2nd = child2Snapshot.val();   
+                                console.log(keyChild);
+                                
+                                var child2nd = child2Snapshot.val(); 
+                                console.log(child2nd);
+                                  
                                     // console.log("2nd Child : "+child2nd);
                                     // class = {
                                     //     name : key,
