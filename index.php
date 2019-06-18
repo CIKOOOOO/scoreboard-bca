@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Score Board</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
         <script>
           // Initialize Firebase
@@ -52,7 +52,6 @@
             <script type="text/javascript">
                 var allList = [];
                 var d = new Date();
-                console.log(d.toLocaleTimeString());
                 var node = "";
                 var query = firebase.database().ref("leaderboard");
                 var nama = [];
@@ -63,35 +62,46 @@
                         allList = [];
                          snapshot.forEach(function(childSnapshot){
                             var key = childSnapshot.key;
-                            console.log(key);
+                            // console.log(key);
                             
-                            var child = childSnapshot.val();
-                            console.log(child);
+                            var childNickname = childSnapshot.child('nickname').val();
+                            var childTotalScore = childSnapshot.child('total_score').val();
+                            // console.log(child);
+
+                            sort(childNickname, childTotalScore, key);
                             
                                 // console.log("1st Child : "+key);
                                 // nama.push(key);
-                            childSnapshot.forEach(function(child2Snapshot){
-                                var keyChild = child2Snapshot.key;
-                                console.log(keyChild);
+                            // childSnapshot.forEach(function(child2Snapshot){
+                            //     var keyChild = child2Snapshot.key;
+                            //     // console.log(keyChild);
                                 
-                                var child2nd = child2Snapshot.val(); 
-                                console.log(child2nd);
+                            //     var child1 = child2Snapshot.val();
+                            //     var child2nd = child2Snapshot.val(); 
+                            //     // console.log(child2nd);
                                   
-                                    // console.log("2nd Child : "+child2nd);
-                                    // class = {
-                                    //     name : key,
-                                    //     score : child2nd
-                                    // };
+                            //         // console.log("2nd Child : "+child2nd);
+                            //         // class = {
+                            //         //     name : key,
+                            //         //     score : child2nd
+                            //         // };
 
-                                sort(key,child2nd);
-                            }); 
+                            //     // console.log(child1+" - "+child2nd);
+                                
+
+                            //     // sort(child1nd,child2nd);
+                            // }); 
                         });
                     });
 
-                function sort(name, scores){
+                function sort(name, scores, key){
                         var mantab = {
+                            key : key,
                             nama : name,
                             score : scores,
+                            getKey : function(){
+                                return this.key;
+                            },
                             getName : function(){
                                 return this.nama;
                             },
