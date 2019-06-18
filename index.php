@@ -25,8 +25,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <img class="s1" src="/res/star.png" width="100px" height="100px" alt="star">
-            <img class="s2" src="/res/star.png" width="100px" height="100px" alt="star">
+            <img class="s1" src="res/star.png" width="100px" height="100px" alt="star">
+            <img class="s2" src="res/star.png" width="100px" height="100px" alt="star">
             <div class="title">TOP 5 HIGHSCORE</div>
         </div>
 
