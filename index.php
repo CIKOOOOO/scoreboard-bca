@@ -62,35 +62,9 @@
                         allList = [];
                          snapshot.forEach(function(childSnapshot){
                             var key = childSnapshot.key;
-                            // console.log(key);
-                            
                             var childNickname = childSnapshot.child('nickname').val();
                             var childTotalScore = childSnapshot.child('total_score').val();
-                            // console.log(child);
-
                             sort(childNickname, childTotalScore, key);
-                            
-                                // console.log("1st Child : "+key);
-                                // nama.push(key);
-                            // childSnapshot.forEach(function(child2Snapshot){
-                            //     var keyChild = child2Snapshot.key;
-                            //     // console.log(keyChild);
-                                
-                            //     var child1 = child2Snapshot.val();
-                            //     var child2nd = child2Snapshot.val(); 
-                            //     // console.log(child2nd);
-                                  
-                            //         // console.log("2nd Child : "+child2nd);
-                            //         // class = {
-                            //         //     name : key,
-                            //         //     score : child2nd
-                            //         // };
-
-                            //     // console.log(child1+" - "+child2nd);
-                                
-
-                            //     // sort(child1nd,child2nd);
-                            // }); 
                         });
                     });
 
