@@ -39,12 +39,12 @@
             <div id="score03">
                 <span id="number3"></span> <span id="nick3"></span> <span id="score3"></span>
             </div>
-            <div id="score04">
+            <!-- <div id="score04">
                 <span id="number4"></span> <span id="nick4"></span> <span id="score4"></span>
             </div>
             <div id="score05">
                 <span id="number5"></span> <span id="nick5"></span> <span id="score5"></span>
-            </div>
+            </div> -->
 
             <div id="div1">
             </div>
@@ -91,7 +91,7 @@
                         });
 
                         for (var i = 0; i < allList.length; i++) {
-                            if(i < 5){
+                            if(i < 3){
                                 document.getElementById("score0"+(i+1)).style.display = 'block';
                                 document.getElementById("number"+(i+1)).innerHTML = (i+1) + ". "
                                 document.getElementById("nick"+(i+1)).innerHTML = allList[i].getName();
